@@ -1,0 +1,48 @@
+// Constants
+let appName: String = "Awesome App"
+let developerName: String = "Tech Genius"
+let initialReleaseYear: Int = 2023
+
+// Variables
+var currentVersion: Double = 1.0
+var numberOfDownloads: Int = 5000
+var userRating: Double = 4.0
+
+// Print initial values
+print("Initial Values:")
+print("App Name: \(appName)")
+print("Developer: \(developerName)")
+print("Initial Release Year: \(initialReleaseYear)")
+print("Current Version: \(currentVersion)")
+print("Number of Downloads: \(numberOfDownloads)")
+print("User Rating: \(userRating)/5.0\n")
+
+// Simulate an update
+currentVersion += 0.1
+numberOfDownloads += 1000
+userRating += 0.2
+
+// Print updated values
+print("After Update:")
+print("App Name: \(appName)")
+print("Developer: \(developerName)")
+print("Current Version: \(currentVersion)")
+print("Number of Downloads: \(numberOfDownloads)")
+print("User Rating: \(userRating)/5.0")
+
+
+
+// Recommendation System based on userRating
+var recommendation: String
+
+if userRating >= 4.5 {
+    recommendation = "Highly Recommended"
+} else if userRating >= 3.5 && userRating < 4.5 {
+    recommendation = "Recommended"
+} else if userRating >= 2.5 && userRating < 3.5 {
+    recommendation = "Moderately Recommended"
+} else {
+    recommendation = "Not Recommended"
+}
+
+print("Recommendation: \(recommendation)")
